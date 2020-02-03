@@ -6,7 +6,7 @@
 function sumSalary(salaries) {
   let res = 0;
   for (let key in salaries) {
-    if (salaries[key] === 'number') {
+    if (typeof salaries[key] === 'number') {
       res += salaries[key];
     }
   }
