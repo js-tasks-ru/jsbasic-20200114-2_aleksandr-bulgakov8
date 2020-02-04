@@ -5,8 +5,5 @@
  * @returns {string}
  */
 function showSalary(data, age) {
-  let user = data.filter(item => item.age <= age);
-  alert(user.map(item => `${item.name} ${item.balance}, \n`));
+  return data.filter(item => item.age <= age).map(item => `${item.name}, ${item.balance}`).join(`\n`);
 }
-
-showSalary(data, 21);
